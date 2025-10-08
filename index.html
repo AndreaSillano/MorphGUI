@@ -196,15 +196,15 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="" target="">TOMMASO CALÒ</a><!--<sup>*</sup>--></span>
-                <a href="" target="">ANDREA SILLANO</a><!--<sup>*</sup>--></span>
-                <a href="" target="">LUIGI DE RUSSIS</a><!--<sup>*</sup>--></span>
+                <span class="author-block"><a href="https://tommasocalo.github.io" target="_blank">TOMMASO CALÒ</a>,<!--<sup>*</sup>--></span>
+                <span class="author-block"><a href="" target="">ANDREA SILLANO</a>,<!--<sup>*</sup>--></span>
+                <span class="author-block"><a href="https://www.polito.it/personale?p=luigi.derussis" target="_blank">LUIGI DE RUSSIS</a><!--<sup>*</sup>--></span>
 
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block"><br>Under Review at IJHCS 2024</span>
+                    <span class="author-block"><br>under review</span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
                   </div>
@@ -259,13 +259,7 @@
 
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.png" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Dynamic component system - Runtime generation and safe evaluation update React views while preserving state.
-               </h2>
-     </div>
+
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/carousel4.png" alt="Third research result visualization" loading="lazy"/>
@@ -405,26 +399,35 @@
       <div class="content has-text-justified">
         <p>
           The user study evaluated <strong>MorphGUI</strong> in terms of usability, learning curve, and interaction effectiveness when customizing graphical interfaces through <strong>natural language</strong>. 
-          Participants performed a series of <strong>interface modification tasks</strong> using a calendar application (see Figure 1). Each participant started with a <em>base calendar layout</em> and used MorphGUI to reproduce one or more <strong>target interfaces</strong> of increasing complexity. 
+          Participants performed a series of <strong>interface modification tasks</strong> using a calendar application. Each participant started with a <em>base calendar layout</em> and used MorphGUI to reproduce one or more <strong>target interfaces</strong> of increasing complexity. 
           The <em>easy task</em> involved straightforward visual or structural edits (e.g., changing colors, repositioning elements), while the <em>complex task</em> required <strong>functional and aesthetic modifications</strong>, such as adding components, reorganizing layouts, or combining multiple requests into a single prompt.
         </p>
 
         <div class="columns is-centered mt-5">
-          <div class="column is-two-thirds">
+          <div class="column ">
             <figure class="image">
-              <img src="static/images/target_interfaces.png" alt="Starting and target calendar interfaces used in the MorphGUI study.">
-              <figcaption><strong>Figure 1.</strong> Starting calendar interface (left) and target designs for the easy (top right) and complex (bottom right) customization tasks.</figcaption>
+              <img src="static/images/target_interfaces.png" alt="Starting and target calendar interfaces used in the MorphGUI study." style="width: 200%; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 16px;">
+              <figcaption>Starting calendar interface (left) and target designs for the easy (top right) and complex (bottom right) customization tasks.</figcaption>
             </figure>
           </div>
         </div>
 
         <p>
           Results from the <strong>System Usability Scale (SUS)</strong> and custom <strong>Likert-scale items</strong> indicate that participants found MorphGUI <strong>intuitive, well-integrated, and easy to use</strong>, with low perceived complexity. 
-          Most participants <em>disagreed</em> with statements suggesting high cognitive demand or inconsistency, confirming a <strong>low learning overhead</strong> and <strong>high user confidence</strong> (Figure 2).
+          Most participants <em>disagreed</em> with statements suggesting high cognitive demand or inconsistency, confirming a <strong>low learning overhead</strong> and <strong>high user confidence</strong>.
         </p>
 
+        <div class="columns is-centered mt-4">
+          <div class="column  has-text-centered">
+            <figure class="image">
+              <img src="static/images/exper.png" alt="User experience metrics" style="box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 16px; width: 100%;">
+              <figcaption>Event occurrences for Generate, Reset, and Previous actions, alongside prompt length and task scores across participants.</figcaption>
+            </figure>
+          </div>
+        </div>
+
         <p>
-          Correlation analyses revealed <strong>no significant relationship</strong> between users’ familiarity with large language models (LLMs) and overall task performance (Pearson r = −0.03, p = 0.883), suggesting that <strong>even participants unfamiliar with LLMs were able to effectively complete customization tasks</strong> (Figure 3). 
+          Correlation analyses revealed <strong>no significant relationship</strong> between users’ familiarity with large language models (LLMs) and overall task performance (Pearson r = -0.03, p = 0.883), suggesting that <strong>even participants unfamiliar with LLMs were able to effectively complete customization tasks</strong>. 
           However, a mild positive trend (r = 0.24, p = 0.165) was observed between <strong>prompt descriptiveness</strong> and task success, implying that clearer and more detailed natural language prompts tended to produce better customization outcomes.
           Additionally, analysis of <strong>template usage patterns</strong> showed that participants primarily relied on the <em>“what” field</em> for <strong>functional modifications</strong> and the <em>“how” field</em> for <strong>styling and layout changes</strong>, supporting MorphGUI’s dual-input design principle.
         </p>
@@ -433,15 +436,15 @@
         <div class="columns mt-5">
           <div class="column is-one-half">
             <figure class="image">
-              <img src="static/images/sus.png" alt="SUS Likert-scale responses for MorphGUI usability.">
-              <figcaption><strong>Figure 2.</strong> SUS-based Likert-scale results showing strong agreement with positive usability statements.</figcaption>
+              <img src="static/images/sus.png" alt="SUS Likert-scale responses for MorphGUI usability." style="box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 16px;">
+              <figcaption>SUS-based Likert-scale results showing strong agreement with positive usability statements.</figcaption>
             </figure>
           </div>
 
           <div class="column is-one-half">
             <figure class="image">
-              <img src="static/images/exp_corr.png" alt="Correlation between LLM familiarity and MorphGUI task performance.">
-              <figcaption><strong>Figure 3.</strong> No significant correlation between user familiarity with LLMs and overall performance.</figcaption>
+              <img src="static/images/exp_corr.png" alt="Correlation between LLM familiarity and MorphGUI task performance." style="box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 16px;">
+              <figcaption> No significant correlation between user familiarity with LLMs and overall performance.</figcaption>
             </figure>
           </div>
         </div>
